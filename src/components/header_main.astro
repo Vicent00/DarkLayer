@@ -1,0 +1,158 @@
+---
+// phrases variables
+const frases = [
+  '"Tus datos, tu poder. Recupera el control de tu privacidad en un mundo digital."',
+  '"Privacidad sin concesiones. Porque el verdadero poder es tener el control de tu información."',
+  '"La soberanía digital es tu derecho. Protege, controla y empodera tus datos."',
+];
+
+const index = Math.floor((Date.now() / 3000) % frases.length);
+const fraseActual = frases[index];
+
+// nav imports
+const menuItems = [
+  { name: 'Crea tu entorno personalizado', path: '/crea_tu_entorno' },
+  { name: 'Aprende Privacidad', path: '/' },
+  { name: 'Herramientas', path: '/' },
+  { name: 'Blogs', path: '/' },
+];
+
+
+---
+
+<header class="relative  flex flex-col items-center justify-center min-h-[60vh]">
+
+    <div class="absolute top-2 w-full  py-2 flex justify-end px-6 space-x-4">
+        <a href="https://github.com/Vicent00" target="_blank" class=" hover:text-blue-400 transition duration-300">
+          <img src="/github.svg" alt="GitHub" class="w-6 h-6" />
+        </a>
+        <a href="https://linkedin.com/in/vicente-aguilar00" target="_blank" class=" hover:text-blue-400 transition duration-300">
+          <img src="/linkedin.svg" alt="LinkedIn" class="w-6 h-6" />
+        </a>
+        <a href="mailto:info@vicenteaguilar.com" class=" hover:text-blue-400 transition duration-300">
+          <img src="/email.svg" alt="Email" class="w-6 h-6" />
+        </a>
+      </div>
+
+    <div >
+
+    <h1 class="text-6xl text-black font-extrabold mb-6">Dark Layer</h1>
+
+
+</div>
+
+
+
+<div class="frasecaja flex items-center justify-center  text-black">
+    <div class="relative w-full max-w-2xl text-center overflow-hidden">
+      
+        <p class="frase  font-bold  w-full opacity-0">
+          {fraseActual}
+        </p>
+      
+    </div>
+  </div>
+
+ 
+  
+<nav class=" hidden md:flex sm:flex-col  flex padding-20 justify-between " >
+    <div>
+    {menuItems.map((item) => (
+      <a href={item.path} id="menu" class="menua font-bold justify-center item menu text-black">
+        {item.name}
+      </a>
+    ))}
+    </div>
+  </nav>
+
+
+</header>
+
+
+
+
+<footer class="mt-10 rounded-lg shadow-sm  m-4">
+  <div class="w-full  mx-auto p-2 md:py-4">
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+              <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Dark Layer</span>
+          </a>
+          <ul class="flex flex-wrap items-center  text-sm font-small text-white-300  ">
+              <li>
+                  <a href="/sobre_nosotros" class="hover:underline me-2 md:me-4">Sobre nosotros</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline me-2 md:me-4">Creador de Contraseñas</a>
+              </li>
+              
+              <li>
+                  <a href="/contacto" class="hover:underline">Contacto</a>
+              </li>
+          </ul>
+      </div>
+      <hr class="my-1 border-white-200 sm:mx-auto border-white-700 lg:my-4" />
+      <span class="block text-xs text-white-500 sm:text-center text-white-400">© 2025 <a href="#" class="hover:underline">DarkLayer™</a>. All Rights Reserved.</span>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<style>
+
+  footer{
+    margin-top: 165px;
+    color: white;
+  }
+ 
+#menu:hover{
+  transform: scale(1.1);
+  background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 20%, rgba(0,0,0,1) 98%);
+
+}
+  
+ @keyframes fadeInOut {
+    0%, 40% { opacity: 0; }
+    10%, 40% { opacity: 1; }
+  }
+
+  .frase {
+    animation: fadeInOut 7s infinite;
+  }
+
+ .menu{
+
+  padding-right: 50px;
+
+
+ }
+
+ nav{
+  margin-top: 50px;
+ }
+
+.frasecaja{
+  margin-top: 35px;
+}
+.menua{
+  border: 1px solid black;
+  background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 40%, rgba(0,0,0,1) 98%);
+  border-radius: 200px;
+  margin-right: 20px;
+  text-align: center;
+  padding: 10px 45px;
+  text-decoration: bold;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+</style>
+
+
+
+
