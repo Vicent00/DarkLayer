@@ -11,6 +11,40 @@ import Footer from "../components/footer.astro";
 
 <Header/>
 
+<aside class="w-86 h-screen text-white p-6 fixed ml-5 top-16 left-0 overflow-y-auto rounded-lg" style="background-color: #303030;">
+    <h2 id="h2_sidebar" class="text-lg font-bold mb-4">Entorno Personalizado de Privacidad</h2>
+    <ul class="space-y-1">
+      <li><a href="#" class="block hover:bg-gray-700 p-2 rounded">Introducción a la privacidad</a></li>
+      <li><a href="#" class="block hover:bg-gray-700 p-2 rounded">¿Por qué proteger tu información?</a></li>
+      <li><a href="#" class="block hover:bg-gray-700 p-2 rounded">Definiendo tu nivel de privacidad</a></li>
+    </ul>
+  
+    <h2 id="h2_sidebar" class="text-lg font-bold mt-6">Elección del Hardware Seguro</h2>
+    <ul class="space-y-1">
+      <li><a href="#" class="block hover:bg-gray-700 p-2 rounded">Mejores laptops para privacidad</a></li>
+      <li><a href="#" class="block hover:bg-gray-700 p-2 rounded">Dispositivos móviles privados</a></li>
+    </ul>
+  </aside>
+  
+
+
+  <main class="ml-100  -mt-40 p-6 rounded-lg">
+    <div id="contenido" class="">
+    <h1 class="text-4xl font-bold">Dark Layer</h1>
+    <h2 class="text-2xl font-semibold text-gray-700 mt-2">Privacidad avanzada: Tu Guía definitiva</h2>
+    <p class="italic mt-2">"Privacidad no es paranoia, es libertad".</p>
+  
+    <section class=" p-6 rounded-lg mt-6">
+      <h2 class="text-xl font-bold">Entorno Personalizado de Privacidad</h2>
+      <p class="text-gray-800 mt-4">
+        La privacidad no es solo para los que tienen algo que esconder. Es una herramienta esencial
+        para proteger tus datos, tu seguridad y tu tranquilidad.
+      </p>
+    </section>
+</div>
+
+</main>
+  
 
 
 
@@ -30,3 +64,24 @@ import Footer from "../components/footer.astro";
 <Footer/>
 
 </AltLayout>
+
+<style>
+
+#h2_sidebar{
+  color: #9F9F9F;
+  font-size: 1rem;
+}
+
+
+li a{
+
+
+}
+
+#contenido{
+background-color: #303030;
+margin-right: rem;
+
+}
+  
+</style>
