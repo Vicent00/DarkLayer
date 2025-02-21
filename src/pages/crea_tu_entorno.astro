@@ -1,87 +1,211 @@
 ---
 import AltLayout from "../layouts/AltLayout.astro";
-
 import Header from "../components/Header.astro";
-import Footer from "../components/footer.astro"; 
+import Footer from "../components/footer.astro";
 
+// Definir contenido del sidebar para hacerlo más dinámico
+const sections = [
+    {
+    title: "Entorno Personalizado de Privacidad",
+    path: "/entorno-privacidad",
+    items: [
+      { text: "Introducción a la privacidad y modelo de amenaza", path: "/privacidad-modelo-amenaza" },
+      { text: "¿Por qué es importante proteger tu información?", path: "/importancia-privacidad" },
+      { text: "Definiendo tu nivel de privacidad", path: "/nivel-privacidad" },
+      { text: "Privacidad digital vs. privacidad física", path: "/privacidad-digital-fisica" }
+    ]
+  },
+  {
+    title: "Elección del Hardware Seguro",
+    path: "/hardware-seguro",
+    items: [
+      { text: "Mejores laptops para privacidad ", path: "/laptops-privacidad" },
+      { text: "Dispositivos móviles privados", path: "/moviles-privados" },
+      { text: "Uso de máquinas virtuales para anonimato", path: "/maquinas-virtuales" },
+      { text: "Autohospedaje y servidores privados", path: "/autohospedaje" },
+      { text: "Firewalls y segmentación de redes", path: "/firewalls-segmentacion" }
+    ]
+  },
+  {
+    title: "Sistemas Operativos Privados",
+    path: "/sistemas-operativos",
+    items: [
+      { text: "Mejores distribuciones de Linux para privacidad", path: "/linux-privacidad" },
+      { text: "Instalación y configuración de Pop!_OS", path: "/popos" },
+      { text: "Uso de Qubes OS para máxima seguridad", path: "/qubes-os" },
+      { text: "Personalización y optimización para privacidad", path: "/personalizacion" }
+    ]
+  },
+  {
+    title: "Software Esencial para Privacidad",
+    path: "/software-privacidad",
+    items: [
+      { text: "Navegadores privados ", path: "/navegadores" },
+      { text: "Administradores de contraseñas y autenticación 2FA", path: "/2fa" },
+      { text: "Proveedores de correo seguro y cifrado ", path: "/correo-seguro" },
+      { text: "Mensajería segura ", path: "/mensajeria" },
+      { text: "VPNs y DNS privado", path: "/vpn-dns" },
+      { text: "Firewalls y seguridad en la red", path: "/firewalls" }
+    ]
+  },
+  {
+    title: "Gestión de Identidad y Anonimato",
+    path: "/gestion-identidad",
+    items: [
+      { text: "Creación y manejo de alias", path: "/alias" },
+      { text: "Protegiendo tu nombre real y dirección", path: "/proteccion-identidad" },
+      { text: "Uso de números de teléfono virtuales (VOIP)", path: "/voip" },
+      { text: "Privacidad en redes sociales y plataformas digitales", path: "/privacidad-redes" },
+      { text: "Eliminación de datos personales en internet", path: "/eliminacion-datos" }
+    ]
+  },
+  {
+    title: "Privacidad en Finanzas y Pagos",
+    path: "/finanzas-privacidad",
+    items: [
+      { text: "Métodos de pago anónimos", path: "/metodos-pago-anonimos" },
+      { text: "Configuración de cuentas bancarias privadas", path: "/cuentas-privadas" },
+      { text: "Compra y alquiler de propiedades de forma anónima", path: "/comprar-anonimamente" },
+      { text: "Comercio electrónico sin exponer tu identidad", path: "/ecommerce-privado" }
+    ]
+  },
+  {
+    title: "Privacidad Física y Eliminación de Rastro",
+    path: "/privacidad-fisica",
+    items: [
+      { text: "Uso de direcciones de reenvío y buzones seguros", path: "/reenvio-buzones" },
+      { text: "Estrategias para viviendas y hospedajes privados", path: "/hospedajes-privados" },
+      { text: "Prevención del rastreo en viajes y ubicación", path: "/prevencion-rastreo" },
+      { text: "Propiedad y registro de vehículos anónimos", path: "/vehiculos-anonimos" },
+      { text: "Estilo de vida nómada y fuera del radar", path: "/vida-nomada" }
+    ]
+  },
+  {
+    title: "Protección y Eliminación de Datos",
+    path: "/proteccion-datos",
+    items: [
+      { text: "Cómo eliminar tus datos de internet", path: "/eliminar-datos" },
+      { text: "Congelación de datos y solicitudes de eliminación", path: "/congelacion-datos" },
+      { text: "Estrategias de desinformación para privacidad", path: "/desinformacion-privacidad" },
+      { text: "Concienciación sobre OSINT y rastreo en línea", path: "/osint-rastreo" }
+    ]
+  },
+  {
+    title: "Estrategias de Emergencia y Seguridad",
+    path: "/emergencia-seguridad",
+    items: [
+      { text: "¿Qué hacer si eres víctima de doxxing?", path: "/doxxing" },
+      { text: "Copias de seguridad cifradas y redundancia de datos", path: "/copias-seguridad" },
+      { text: "Preparación para desastres y emergencias", path: "/preparacion-desastres" },
+      { text: "Cómo manejar una filtración de privacidad", path: "/filtracion-privacidad" }
+    ]
+  },
+  {
+    title: "Ruta Personalizada de Privacidad",
+    path: "/ruta-privacidad",
+    items: [
+      { text: "🔹 Privacidad Digital: Protege tu vida en línea y evita el rastreo", path: "/privacidad-digital" },
+      { text: "🔹 Privacidad Física: Reduce tu exposición pública y protege tu hogar", path: "/privacidad-fisica" },
+      { text: "🔹 Anonimato Completo: Desaparece del radar y borra tu identidad", path: "/anonimato-completo" },
+      { text: "🔹 Privacidad Básica: Implementa mejoras sin grandes cambios", path: "/privacidad-basica" }
+    ]
+  },
+  {
+    title: "📎 Pasos Finales para Mantener tu Privacidad",
+    path: "/pasos-finales",
+    items: [
+      { text: "Evaluar y reforzar tu huella digital", path: "/huella-digital" },
+      { text: "Mejorar puntos débiles y actualizar herramientas", path: "/mejorar-privacidad" },
+      { text: "Mantenerse informado sobre amenazas y tendencias", path: "/informacion-privacidad" },
+      { text: "Convertir la privacidad en un hábito, no en una solución temporal", path: "/privacidad-habito" }
+    ]
+  }
+
+];
 ---
 
-
 <AltLayout>
+  <Header />
 
-<Header/>
-
-<aside class="w-86 h-screen text-white p-6 fixed ml-5 top-16 left-0 overflow-y-auto rounded-lg" style="background-color: #303030;">
-    <h2 id="h2_sidebar" class="text-lg font-bold mb-4">Entorno Personalizado de Privacidad</h2>
-    <ul class="space-y-1">
-      <li><a href="#" class="block hover:bg-gray-700 p-2 rounded">Introducción a la privacidad</a></li>
-      <li><a href="#" class="block hover:bg-gray-700 p-2 rounded">¿Por qué proteger tu información?</a></li>
-      <li><a href="#" class="block hover:bg-gray-700 p-2 rounded">Definiendo tu nivel de privacidad</a></li>
-    </ul>
-  
-    <h2 id="h2_sidebar" class="text-lg font-bold mt-6">Elección del Hardware Seguro</h2>
-    <ul class="space-y-1">
-      <li><a href="#" class="block hover:bg-gray-700 p-2 rounded">Mejores laptops para privacidad</a></li>
-      <li><a href="#" class="block hover:bg-gray-700 p-2 rounded">Dispositivos móviles privados</a></li>
-    </ul>
+  <!-- Sidebar -->
+  <aside class=" pb-28 w-100 mt-10 mb-20 max-h-screen text-white p-6 fixed ml-5 top-16 left-0  overflow-y-auto rounded-lg">
+    {sections.map((section) => (
+      <div class="mb-6">
+        <h2 class=" m-2 text-lg font-bold ">
+          <a href={section.path} class="block ">{section.title}</a>
+        </h2>
+        <ul class="ml-4 list-disc space-y-2">
+          {section.items.map((item) => (
+            <li>
+              <a href={item.path} class="block p-2 hover:underline">{item.text}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
   </aside>
-  
 
 
-  <main class="ml-100  -mt-40 p-6 rounded-lg">
-    <div id="contenido" class="">
-    <h1 class="text-4xl font-bold">Dark Layer</h1>
-    <h2 class="text-2xl font-semibold text-gray-700 mt-2">Privacidad avanzada: Tu Guía definitiva</h2>
+
+
+
+  <!-- Contenido -->
+  <main class="ml-105 -mt-40 p-6 rounded-lg">
+    <h2 class="text-2xl  font-semibold text-gray-700 mt-2">
+      Privacidad Avanzada: Tu Guía definitiva
+    </h2>
+
     <p class="italic mt-2">"Privacidad no es paranoia, es libertad".</p>
-  
-    <section class=" p-6 rounded-lg mt-6">
-      <h2 class="text-xl font-bold">Entorno Personalizado de Privacidad</h2>
-      <p class="text-gray-800 mt-4">
-        La privacidad no es solo para los que tienen algo que esconder. Es una herramienta esencial
-        para proteger tus datos, tu seguridad y tu tranquilidad.
-      </p>
-    </section>
-</div>
-
-</main>
-  
 
 
+    <div id="contenido">
 
+      <section class="p-6 rounded-lg mt-6 ">
+        <h2 class="text-xl font-bold">Entorno Personalizado de Privacidad</h2>
+        <p class="text-gray-800 mt-4">
+          La privacidad no es solo para los que tienen algo que esconder. Es una herramienta esencial
+          para proteger tus datos, tu seguridad y tu tranquilidad.
+        </p>
+      </section>
+    </div>
+  </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<Footer/>
-
+  <Footer />
 </AltLayout>
 
 <style>
+  
 
-#h2_sidebar{
-  color: #9F9F9F;
+/* Aside bar */
+aside {
+    border-radius: 1.5rem;
+    background-color: #303030;
+  }
+aside h2 a{
+  color: #9f9f9f;
+  padding-left: 1rem;
   font-size: 1rem;
 }
 
-
-li a{
-
-
+aside h2 a:hover{
+  background-color: rgba(223, 223, 223, 0.5);
+  border-radius: 1rem;
 }
 
-#contenido{
-background-color: #303030;
-margin-right: rem;
+  ul li {
+    list-style-type: disc;
+    margin-left: 2rem;
+    font-style: italic;
+    line-height: 0.9rem;
+  }
 
-}
-  
+  ul li:hover {
+    text-decoration: underline;
+  }
+
+  /* Contenido */
+  #contenido {
+    background-color: #878787;
+    border-radius: 1rem;
+  }
 </style>
