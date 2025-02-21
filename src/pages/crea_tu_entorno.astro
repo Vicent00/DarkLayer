@@ -7,7 +7,7 @@ import Footer from "../components/footer.astro";
 const sections = [
     {
     title: "Entorno Personalizado de Privacidad",
-    path: "/entorno-privacidad",
+    path: "#entorno-privacidad",
     items: [
       { text: "Introducción a la privacidad y modelo de amenaza", path: "/privacidad-modelo-amenaza" },
       { text: "¿Por qué es importante proteger tu información?", path: "/importancia-privacidad" },
@@ -17,7 +17,7 @@ const sections = [
   },
   {
     title: "Elección del Hardware Seguro",
-    path: "/hardware-seguro",
+    path: "#hardware-seguro",
     items: [
       { text: "Mejores laptops para privacidad ", path: "/laptops-privacidad" },
       { text: "Dispositivos móviles privados", path: "/moviles-privados" },
@@ -28,7 +28,7 @@ const sections = [
   },
   {
     title: "Sistemas Operativos Privados",
-    path: "/sistemas-operativos",
+    path: "#sistemas-operativos",
     items: [
       { text: "Mejores distribuciones de Linux para privacidad", path: "/linux-privacidad" },
       { text: "Instalación y configuración de Pop!_OS", path: "/popos" },
@@ -38,7 +38,7 @@ const sections = [
   },
   {
     title: "Software Esencial para Privacidad",
-    path: "/software-privacidad",
+    path: "#software-privacidad",
     items: [
       { text: "Navegadores privados ", path: "/navegadores" },
       { text: "Administradores de contraseñas y autenticación 2FA", path: "/2fa" },
@@ -50,7 +50,7 @@ const sections = [
   },
   {
     title: "Gestión de Identidad y Anonimato",
-    path: "/gestion-identidad",
+    path: "#gestion-identidad",
     items: [
       { text: "Creación y manejo de alias", path: "/alias" },
       { text: "Protegiendo tu nombre real y dirección", path: "/proteccion-identidad" },
@@ -61,7 +61,7 @@ const sections = [
   },
   {
     title: "Privacidad en Finanzas y Pagos",
-    path: "/finanzas-privacidad",
+    path: "#finanzas-privacidad",
     items: [
       { text: "Métodos de pago anónimos", path: "/metodos-pago-anonimos" },
       { text: "Configuración de cuentas bancarias privadas", path: "/cuentas-privadas" },
@@ -71,7 +71,7 @@ const sections = [
   },
   {
     title: "Privacidad Física y Eliminación de Rastro",
-    path: "/privacidad-fisica",
+    path: "#privacidad-fisica",
     items: [
       { text: "Uso de direcciones de reenvío y buzones seguros", path: "/reenvio-buzones" },
       { text: "Estrategias para viviendas y hospedajes privados", path: "/hospedajes-privados" },
@@ -82,7 +82,7 @@ const sections = [
   },
   {
     title: "Protección y Eliminación de Datos",
-    path: "/proteccion-datos",
+    path: "#proteccion-datos",
     items: [
       { text: "Cómo eliminar tus datos de internet", path: "/eliminar-datos" },
       { text: "Congelación de datos y solicitudes de eliminación", path: "/congelacion-datos" },
@@ -92,7 +92,7 @@ const sections = [
   },
   {
     title: "Estrategias de Emergencia y Seguridad",
-    path: "/emergencia-seguridad",
+    path: "#emergencia-seguridad",
     items: [
       { text: "¿Qué hacer si eres víctima de doxxing?", path: "/doxxing" },
       { text: "Copias de seguridad cifradas y redundancia de datos", path: "/copias-seguridad" },
@@ -102,7 +102,7 @@ const sections = [
   },
   {
     title: "Ruta Personalizada de Privacidad",
-    path: "/ruta-privacidad",
+    path: "#ruta-privacidad",
     items: [
       { text: "🔹 Privacidad Digital: Protege tu vida en línea y evita el rastreo", path: "/privacidad-digital" },
       { text: "🔹 Privacidad Física: Reduce tu exposición pública y protege tu hogar", path: "/privacidad-fisica" },
@@ -112,7 +112,7 @@ const sections = [
   },
   {
     title: "📎 Pasos Finales para Mantener tu Privacidad",
-    path: "/pasos-finales",
+    path: "#pasos-finales",
     items: [
       { text: "Evaluar y reforzar tu huella digital", path: "/huella-digital" },
       { text: "Mejorar puntos débiles y actualizar herramientas", path: "/mejorar-privacidad" },
@@ -150,23 +150,423 @@ const sections = [
 
 
   <!-- Contenido -->
-  <main class="ml-105 -mt-40 p-6 rounded-lg">
-    <h2 class="text-2xl  font-semibold text-gray-700 mt-2">
+  <main class="ml-105 -mt-50 p-6 rounded-lg">
+    <h2 id="titulo" class="text-5xl  font-semibold ml-10 mt-2">
       Privacidad Avanzada: Tu Guía definitiva
     </h2>
 
-    <p class="italic mt-2">"Privacidad no es paranoia, es libertad".</p>
+    <p id="frase"  class="ml-10 mt-5 italic font-bold mt-2">"Privacidad no es paranoia, es libertad".</p>
 
 
     <div id="contenido">
 
       <section class="p-6 rounded-lg mt-6 ">
-        <h2 class="text-xl font-bold">Entorno Personalizado de Privacidad</h2>
+        <h1 id="entorno-privacidad" class="text-xl font-bold">Entorno Personalizado de Privacidad</h1>
+        <h2 id="">Introducción a la Privacidad y el Modelo de amenaza</h2>
+  
         <p class="text-gray-800 mt-4">
-          La privacidad no es solo para los que tienen algo que esconder. Es una herramienta esencial
-          para proteger tus datos, tu seguridad y tu tranquilidad.
+          La privacidad no es solo para los que tienen algo que esconder. Es una herramienta esencial para proteger tus datos, tu seguridad y tu tranquilidad. En un mundo donde cada clic es monitoreado, entender tu modelo de amenaza es el primer paso para mejorar tu privacidad.
         </p>
+
+        <h3>¿Qué es un modelo de amenaza?</h3>
+        <p>
+          Es un análisis de los riesgos que enfrentas y qué medidas necesitas tomar para mitigarlos. 
+        </p>
+      </br>
+      <p>Pregúntate:</p>
+      <ul>
+<li>✅¿Quién podría querer mis datos?</li>
+<li>✅¿Qué información quiero proteger?</li>
+<li>✅ ¿Qué tan lejos estoy dispuesto a llegar para mantener mi privacidad?
+</li>
+      </ul>
+
+<p>Ejemplo: Un activista en un país represivo necesita un nivel de privacidad extremo, mientras que un usuario común solo quiere evitar el rastreo de anuncios y proteger sus datos financieros. </p>
+
+<h2> ¿Por qué es importante proteger tu información?</h2>
+
+  <p> Las empresas venden tus datos: Cada búsqueda en Google, cada compra online y cada foto en redes sociales genera información que las empresas recopilan y venden.</p>
+  <p>Los gobiernos te rastrean: Muchos países han implementado vigilancia masiva, recopilando datos sin tu consentimiento.</p>
+  <p>Los ciberdelincuentes buscan vulnerabilidades: Sin medidas de seguridad, puedes ser víctima de fraude, suplantación de identidad o doxxing.</p>
+  <p> Privacidad es control: Al proteger tu información, decides qué compartes y con quién.</p>
+
+  <p> Objetivo: Crear un entorno seguro y privado donde tú tengas el control absoluto de tus datos.</p>
+
+<h2>Definiendo tu Nivel de Privacidad</h2>
+
+<p>Cada persona necesita un nivel de privacidad diferente. Aquí te ayudamos a definir el tuyo:</p>
+
+<p>🛡️ Nivel 1: Seguridad Básica (Para el usuario promedio)</p>
+<ul>
+  <li>Dejar de usar navegadores invasivos como Google Chrome</li>
+  <li>Configurar un gestor de contraseñas seguro</li>
+  <li>Utilizar correo privado (ProtonMail, Tutanota)</li>
+  <li>Desactivar la recopilación de datos en dispositivos</li>
+
+</ul>
+<div>
+<p>🛡️ Nivel 1: Seguridad Básica (Para el usuario promedio)</p>
+<ul>
+  <li>Dejar de usar navegadores invasivos como Google Chrome</li>
+  <li>Configurar un gestor de contraseñas seguro</li>
+  <li>Utilizar correo privado (ProtonMail, Tutanota)</li>
+  <li>Desactivar la recopilación de datos en dispositivos</li>
+
+</ul>
+</div>
+
+<div>
+  <p>🔐 Nivel 2: Privacidad Avanzada (Para quienes buscan mayor seguridad)</p>
+  <ul>
+    <li>Usar un sistema operativo centrado en privacidad (Linux, GrapheneOS)</li>
+    <li>Implementar navegadores con máxima privacidad (Firefox con uBlock, Tor)</li>
+    <li>Encriptar dispositivos y correos electrónicos</li>
+    <li>Utilizar VPN y DNS seguros</li>
+  
+  </ul>
+  </div>
+
+  <div>
+    <p>🕵️ Nivel 3: Anonimato Extremo (Para quienes necesitan desaparecer)</p>
+    <ul>
+      <li>Usar alias y nombres falsos en todos los registros</li>
+      <li>Evitar el uso de teléfonos personales y tarjetas bancarias.</li>
+      <li>Comprar bienes de forma anónima (criptomonedas, LLCs).</li>
+      <li>Vivir sin dejar rastros digitales ni físicos.</li>
+    
+    </ul>
+    </div>
+
+    <p>
+      🎯 ¿Dónde te encuentras? </br>
+
+Escoge tu nivel y sigue las secciones específicas para implementar un plan a tu medida.
+
+    </p>
+
+    <h2> Privacidad Digital vs. Privacidad Física</h2>
+
+<p>Privacidad digital se enfoca en evitar el rastreo online, proteger cuentas y encriptar información.</p>
+<p> Privacidad física implica reducir la exposición de tu dirección, datos bancarios y movimientos en el mundo real.</p>
+<p> Ejemplo: Puedes navegar de forma privada con Tor y una VPN, pero si compras una casa con tu nombre, seguirás siendo rastreable.</p>
+<p> La mejor estrategia de privacidad es un equilibrio entre lo digital y lo físico.</p>
+
       </section>
+    
+     <section class="p-6 rounded-lg mt-6 ">
+      <h1 id="hardware-seguro" class="text-xl font-bold">Elección del Hardware Seguro</h1>
+      
+      <p>u privacidad comienza con la elección del hardware adecuado. No importa qué tan seguro sea tu software si tu dispositivo está diseñado para espiarte. Las grandes marcas como Apple, Microsoft y Google han integrado backdoors, telemetría y rastreo en sus sistemas. </p>
+<p>
+  Si realmente quieres control absoluto de tu privacidad, debes empezar con un dispositivo seguro.
+</p>
+<p>
+  🔐 Objetivo: Configurar un entorno digital libre de rastreo, vigilancia y vulnerabilidades.
+</p>
+
+<h2>
+  Mejores laptops para privacidad (Linux, System76)
+</h2>
+
+<p> Los sistemas operativos comerciales como Windows y macOS recopilan grandes cantidades de datos de los usuarios.</p>
+
+<p>Además, el hardware moderno tiene chips ocultos que pueden permitir el acceso remoto sin tu consentimiento.</p>
+
+<h3>⚠️ Problemas con las laptops comerciales
+</h3>
+
+<ul>
+  <li>❌ Windows y MacOS incluyen telemetría forzada que recopila datos personales.</li>
+  <li>❌ Intel y AMD poseen chips ocultos (Intel ME, AMD PSP) que pueden ser explotados.
+  </li>
+  <li>❌ Los BIOS propietarios son un agujero negro de código cerrado y posible espionaje.
+  </li>
+
+  <li>❌ Las laptops modernas restringen modificaciones, impidiendo que el usuario tenga control total sobre su equipo.  </li>
+
+</ul>
+
+<h3>✅ Solución: Laptops con Linux y Firmware Abierto
+
+</h3>
+<p>La mejor opción es una laptop diseñada para la privacidad y seguridad, sin puertas traseras. Aquí te dejo las mejores opciones:</p>
+
+<ul>
+  <li>🖥️ <a href="#">System76</a> → Laptops con Linux preinstalado y firmware Coreboot.</li>
+  <li>💻 <a href="#">Purism Librem</a> → Hardware con chip Intel ME desactivado y software 100% libre.</li>
+
+  <li>🛠️ Lenovo ThinkPad (Modelos antiguos) → Modificables y compatibles con Linux
+  </li>
+
+</ul>
+
+<h2>
+  Dispositivos móviles privados
+</h2>
+
+<p>Los teléfonos móviles son la mayor amenaza para la privacidad. Son micrófonos en tu bolsillo, rastrean tu ubicación y registran todas tus interacciones.</p>
+
+<h3>❌ Android y iPhone: Espionaje en tu Bolsillo
+</h3>
+<ul>
+  <li>Android recopila datos incluso si el teléfono está apagado.
+  </li>
+  <li>iPhone envía información a Apple constantemente.
+  </li>
+  <li>Google y Apple controlan el ecosistema de aplicaciones, censurando herramientas de privacidad.
+  </li>
+
+</ul>
+
+<h3>✅ Solución: Teléfonos Privados con GrapheneOS o iOS Seguro
+
+</h3>
+<ul>
+  <li>📌 GrapheneOS (Para máxima privacidad)
+
+  </li>
+  <li>✅ Basado en Android pero sin rastreo de Google.
+
+  </li>
+  <li>✅ Control total sobre permisos y acceso de apps.
+
+  </li>
+
+  <li>✅ Seguridad reforzada contra ataques y exploits.
+
+  </li>
+  
+</br>
+<li class="font-bold">📌 iPhone (Si no puedes evitarlo, hazlo seguro)
+
+</li>
+<li>🔹 Desactiva iCloud, Face ID y rastreo de ubicación.
+</li>
+<li>🔹 Usa solo apps open-source verificadas.
+</li>
+
+<li>🔹 Evita conectar tu teléfono a cuentas personales.
+</li>
+
+</ul>
+
+
+<p class="font-bold">📢 Consejo: No uses tarjetas SIM asociadas a tu identidad. Opta por números VOIP o SIMs anónimas.
+
+</p>
+
+<h2>Uso de máquinas virtuales para anonmimato</h2>
+
+<p>Si necesitas ejecutar sistemas en un entorno seguro, usa máquinas virtuales (VMs) para aislar actividades sensibles.</p>
+
+<h3>🔹 Mejores Opciones para Virtualización
+</h3>
+
+<ul>
+  <li>🔹 Qubes OS: Máxima seguridad, cada aplicación en su propia VM.
+  </li>
+  <li>🔹 VirtualBox: Fácil de usar y compatible con la mayoría de sistemas.
+  </li>
+  <li>🔹 Whonix: Una VM diseñada para privacidad extrema en Tor.
+  </li>
+</ul>
+
+<p>📌<span class="font-bold">Ejemplo de uso:</span>Usar una VM con Linux para acceso bancario y otra VM diferente para navegación diaria.</p>
+
+<h2>Autohospedaje y sevidores privados</h2>
+<p>La nube pública es una mina de oro para las empresas de datos. Si realmente quieres privacidad, necesitas tu propio servidor.</p>
+
+<h3>🔹 Ventajas de autohospedar tus datos:
+</h3>
+
+<ul>
+  <li>✅ Control total sobre tus archivos y comunicación.
+
+  </li>
+  <li>✅ Sin dependencia de terceros (Google Drive, Dropbox).
+
+  </li>
+  <li>✅ Seguridad reforzada con cifrado extremo.
+  </li>
+</ul>
+
+<h3>🔹 Soluciones recomendadas:
+
+</h3>
+
+<ul>
+  <li>🖥️ Nextcloud: Alternativa privada a Google Drive.
+
+
+  </li>
+  <li>📬 Mail-in-a-Box: Servidor de correo seguro y autohospedado.
+
+
+  </li>
+  <li>📡 Pi-Hole: Firewall contra rastreo en tu red.
+
+
+  </li>
+</ul>
+
+<h2>
+  Firewalls y segmentación de redes
+</h2>
+
+<p>Tu conexión a internet puede ser interceptada si no tomas precauciones. Un firewall seguro protege tu red y bloquea rastreadores.
+
+</p>
+
+<h3>🔐 Firewalls recomendados:
+</h3>
+ 
+<ul>
+  <li>🛠️ OPNsense / pfSense: Routers con firewall de código abierto.
+
+
+
+  </li>
+  <li>🚀 Tor + VPN: Doble capa de seguridad para conexiones sensibles. (No recomendable)
+
+  </li>
+ 
+</ul>
+
+<h3>
+  📌 Ejemplo de configuración segura:
+
+</h3>
+
+
+<ul>
+  <li>1️⃣ Instalar Pi-Hole para bloquear anuncios y rastreo.
+
+
+
+
+  </li>
+  <li>2️⃣ Usar VPN para cifrar la conexión.
+
+
+  </li>
+  <li>3️⃣ Configurar un firewall con reglas estrictas.
+
+  </li>
+ 
+</ul>
+
+</section>
+
+<section class="p-6 rounded-lg mt-6 ">
+<h1 id="entorno-privacidad" class="text-xl font-bold">Sistemas Operativos Privados</h1>
+
+<p>El sistema operativo es <span class="font-bold">el núcleo de tu privacidad digital</span>. Si utilizas un sistema diseñado para rastrearte, como Windows, macOS o Android, cualquier otra medida de privacidad será inútil.</p>
+<p>🔐<span class="font-bold">Objetivo:</span>Elegir e instalar un sistema operativo privado que no dependa de corporaciones que recopilan datos, garantizando control absoluto sobre tu información.</p>
+
+
+
+<h2>Mejores distribuciones de Linux para privacidad</h2>
+
+
+<p>Linux es el mejor sistema operativo para privacidad y seguridad. Existen muchas distribuciones, pero aquí te recomendamos las mejores según tus necesidades:
+</p>
+
+<h3>🔹 Para Usuarios Principiantes (Fácil de Usar)
+</h3>
+<ul>
+<li>💾 Pop!_OS → Basado en Ubuntu, sin telemetría y con cifrado automático.
+</li>
+<li>🐧 Linux Mint → Parecido a Windows, pero sin rastreo ni cuentas obligatorias.
+</li>
+<li>🖥️ Debian → Seguro, estable y sin bloatware.
+</li>
+</ul>
+
+
+<h3>🔹 Para Máxima Seguridad (Para Usuarios Avanzados)
+</h3>
+
+<ul>
+<li>🛡️ Qubes OS → Cada aplicación se ejecuta en una máquina virtual aislada.
+</li>
+<li>🕵️ Tails OS → Sistema operativo portátil que no deja rastros, ideal para anonimato.
+
+</li>
+
+
+</ul>
+<p>
+  📢 Recomendación:
+</br>
+Si eres principiante, instala Pop!_OS o Linux Mint.
+</br>
+Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
+</p>
+
+<h2>Instalación y Configuración de Pop!_OS</h2>
+<p>Pop!_OS es un sistema basado en Ubuntu, pero sin rastreo y con cifrado de disco completo.
+
+</p>
+
+<p>📌 Cómo instalar Pop!_OS en tu laptop:
+</br>
+</p>
+
+<ul>
+  <li>1️⃣ Descarga Pop!_OS en pop.system76.com.
+
+  </li>
+  <li>2️⃣ Crea un USB booteable con Balena Etcher.
+  </li>
+  <li>3️⃣ Conecta el USB a tu laptop y reinicia, entrando al menú de arranque (F2/F12).
+
+
+  </li>
+  <li>4️⃣ Selecciona el USB y sigue el asistente de instalación.
+
+  </li>
+  <li>5️⃣ Habilita cifrado de disco completo al instalar.
+  </li>
+  
+  </ul>
+
+
+
+
+
+
+     </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
     </div>
   </main>
 
@@ -208,4 +608,13 @@ aside h2 a:hover{
     background-color: #878787;
     border-radius: 1rem;
   }
+
+  #titulo {
+    color: #3F3F3F;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); ;
+  }
+  #frase {
+    text-align: center;
+    
+    }
 </style>
