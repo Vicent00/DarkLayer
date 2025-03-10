@@ -9,115 +9,104 @@ const sections = [
     title: "Entorno Personalizado de Privacidad",
     path: "#entorno-privacidad",
     items: [
-      { text: "Introducción a la privacidad y modelo de amenaza", path: "/privacidad-modelo-amenaza" },
-      { text: "¿Por qué es importante proteger tu información?", path: "/importancia-privacidad" },
-      { text: "Definiendo tu nivel de privacidad", path: "/nivel-privacidad" },
-      { text: "Privacidad digital vs. privacidad física", path: "/privacidad-digital-fisica" }
+      { text: "Introducción a la privacidad y modelo de amenaza", path: "#privacidad-modelo-amenaza" },
+      { text: "¿Por qué es importante proteger tu información?", path: "#importancia-privacidad" },
+      { text: "Definiendo tu nivel de privacidad", path: "#nivel-privacidad" },
+      { text: "Privacidad digital vs. privacidad física", path: "#privacidad-digital-fisica" }
     ]
   },
   {
     title: "Elección del Hardware Seguro",
     path: "#hardware-seguro",
     items: [
-      { text: "Mejores laptops para privacidad ", path: "/laptops-privacidad" },
-      { text: "Dispositivos móviles privados", path: "/moviles-privados" },
-      { text: "Uso de máquinas virtuales para anonimato", path: "/maquinas-virtuales" },
-      { text: "Autohospedaje y servidores privados", path: "/autohospedaje" },
-      { text: "Firewalls y segmentación de redes", path: "/firewalls-segmentacion" }
+      { text: "Mejores laptops para privacidad ", path: "#laptops-privacidad" },
+      { text: "Dispositivos móviles privados", path: "#moviles-privados" },
+      { text: "Uso de máquinas virtuales para anonimato", path: "#maquinas-virtuales" },
+      { text: "Autohospedaje y servidores privados", path: "#autohospedaje" },
+      { text: "Firewalls y segmentación de redes", path: "#firewalls-segmentacion" }
     ]
   },
   {
     title: "Sistemas Operativos Privados",
     path: "#sistemas-operativos",
     items: [
-      { text: "Mejores distribuciones de Linux para privacidad", path: "/linux-privacidad" },
-      { text: "Instalación y configuración de Pop!_OS", path: "/popos" },
-      { text: "Uso de Qubes OS para máxima seguridad", path: "/qubes-os" },
-      { text: "Personalización y optimización para privacidad", path: "/personalizacion" }
+      { text: "Mejores distribuciones de Linux para privacidad", path: "#linux-privacidad" },
+      { text: "Instalación y configuración de Pop!_OS", path: "#popos" },
+      { text: "Uso de Qubes OS para máxima seguridad", path: "#qubes-os" },
+      { text: "Personalización y optimización para privacidad", path: "#personalizacion" }
     ]
   },
   {
     title: "Software Esencial para Privacidad",
     path: "#software-privacidad",
     items: [
-      { text: "Navegadores privados ", path: "/navegadores" },
-      { text: "Administradores de contraseñas y autenticación 2FA", path: "/2fa" },
-      { text: "Proveedores de correo seguro y cifrado ", path: "/correo-seguro" },
-      { text: "Mensajería segura ", path: "/mensajeria" },
-      { text: "VPNs y DNS privado", path: "/vpn-dns" },
-      { text: "Firewalls y seguridad en la red", path: "/firewalls" }
+      { text: "Navegadores privados ", path: "#navegadores" },
+      { text: "Administradores de contraseñas y autenticación 2FA", path: "#2fa" },
+      { text: "Proveedores de correo seguro y cifrado ", path: "#correo-seguro" },
+      { text: "Mensajería segura ", path: "#mensajeria" },
+      { text: "VPNs y DNS privado", path: "#vpn-dns" },
+      { text: "Firewalls y seguridad en la red", path: "#firewalls" }
     ]
   },
   {
     title: "Gestión de Identidad y Anonimato",
     path: "#gestion-identidad",
     items: [
-      { text: "Creación y manejo de alias", path: "/alias" },
-      { text: "Protegiendo tu nombre real y dirección", path: "/proteccion-identidad" },
-      { text: "Uso de números de teléfono virtuales (VOIP)", path: "/voip" },
-      { text: "Privacidad en redes sociales y plataformas digitales", path: "/privacidad-redes" },
-      { text: "Eliminación de datos personales en internet", path: "/eliminacion-datos" }
+      { text: "Creación y manejo de alias", path: "#alias" },
+      { text: "Protegiendo tu nombre real y dirección", path: "#proteccion-identidad" },
+      { text: "Uso de números de teléfono virtuales (VOIP)", path: "#voip" },
+      { text: "Privacidad en redes sociales y plataformas digitales", path: "#privacidad-redes" },
+      { text: "Eliminación de datos personales en internet", path: "#eliminacion-datos" }
     ]
   },
   {
     title: "Privacidad en Finanzas y Pagos",
     path: "#finanzas-privacidad",
     items: [
-      { text: "Métodos de pago anónimos", path: "/metodos-pago-anonimos" },
-      { text: "Configuración de cuentas bancarias privadas", path: "/cuentas-privadas" },
-      { text: "Compra y alquiler de propiedades de forma anónima", path: "/comprar-anonimamente" },
-      { text: "Comercio electrónico sin exponer tu identidad", path: "/ecommerce-privado" }
+      { text: "Métodos de pago anónimos", path: "#metodos-pago" },
+      { text: "Configuración de cuentas bancarias privadas", path: "#cuentas-privadas" },
+      { text: "Compra y alquiler de propiedades de forma anónima", path: "#comprar-anonimamente" },
+      { text: "Comercio electrónico sin exponer tu identidad", path: "#ecommerce-privado" }
     ]
   },
-  {
-    title: "Privacidad Física y Eliminación de Rastro",
-    path: "#privacidad-fisica",
-    items: [
-      { text: "Uso de direcciones de reenvío y buzones seguros", path: "/reenvio-buzones" },
-      { text: "Estrategias para viviendas y hospedajes privados", path: "/hospedajes-privados" },
-      { text: "Prevención del rastreo en viajes y ubicación", path: "/prevencion-rastreo" },
-      { text: "Propiedad y registro de vehículos anónimos", path: "/vehiculos-anonimos" },
-      { text: "Estilo de vida nómada y fuera del radar", path: "/vida-nomada" }
-    ]
-  },
+  
   {
     title: "Protección y Eliminación de Datos",
     path: "#proteccion-datos",
     items: [
-      { text: "Cómo eliminar tus datos de internet", path: "/eliminar-datos" },
-      { text: "Congelación de datos y solicitudes de eliminación", path: "/congelacion-datos" },
-      { text: "Estrategias de desinformación para privacidad", path: "/desinformacion-privacidad" },
-      { text: "Concienciación sobre OSINT y rastreo en línea", path: "/osint-rastreo" }
+      { text: "Cómo eliminar tus datos de internet", path: "#eliminar-datos" },
+      { text: "Congelación de datos y solicitudes de eliminación", path: "#congelacion-datos" },
+      { text: "Estrategias de desinformación para privacidad", path: "#desinformacion-privacidad" },
+      { text: "Concienciación sobre OSINT y rastreo en línea", path: "#osint-rastreo" }
     ]
   },
   {
     title: "Estrategias de Emergencia y Seguridad",
     path: "#emergencia-seguridad",
     items: [
-      { text: "¿Qué hacer si eres víctima de doxxing?", path: "/doxxing" },
-      { text: "Copias de seguridad cifradas y redundancia de datos", path: "/copias-seguridad" },
-      { text: "Preparación para desastres y emergencias", path: "/preparacion-desastres" },
-      { text: "Cómo manejar una filtración de privacidad", path: "/filtracion-privacidad" }
+      { text: "¿Qué hacer si eres víctima de doxxing?", path: "#doxxing" },
+      { text: "Copias de seguridad cifradas y redundancia de datos", path: "#copias-seguridad" },
+      { text: "Preparación para desastres y emergencias", path: "#preparacion-desastres" },
+      { text: "Cómo manejar una filtración de privacidad", path: "#filtracion-privacidad" }
     ]
   },
   {
     title: "Ruta Personalizada de Privacidad",
     path: "#ruta-privacidad",
     items: [
-      { text: "🔹 Privacidad Digital: Protege tu vida en línea y evita el rastreo", path: "/privacidad-digital" },
-      { text: "🔹 Privacidad Física: Reduce tu exposición pública y protege tu hogar", path: "/privacidad-fisica" },
-      { text: "🔹 Anonimato Completo: Desaparece del radar y borra tu identidad", path: "/anonimato-completo" },
-      { text: "🔹 Privacidad Básica: Implementa mejoras sin grandes cambios", path: "/privacidad-basica" }
+      { text: " Elige Tu Nivel de Privacidad", path: "#niveles-privacidad" },
+      { text: " Pasos Finales para Mantener tu Privacidad", path: "#pasos-finales" },
+      
     ]
   },
   {
     title: "📎 Pasos Finales para Mantener tu Privacidad",
     path: "#pasos-finales",
     items: [
-      { text: "Evaluar y reforzar tu huella digital", path: "/huella-digital" },
-      { text: "Mejorar puntos débiles y actualizar herramientas", path: "/mejorar-privacidad" },
-      { text: "Mantenerse informado sobre amenazas y tendencias", path: "/informacion-privacidad" },
-      { text: "Convertir la privacidad en un hábito, no en una solución temporal", path: "/privacidad-habito" }
+      { text: "Evaluar y reforzar tu huella digital", path: "#huella-digital" },
+      { text: "Mejorar puntos débiles y actualizar herramientas", path: "#mejorar-privacidad" },
+      { text: "Mantenerse informado sobre amenazas y tendencias", path: "#informacion-privacidad" },
+      { text: "Convertir la privacidad en un hábito, no en una solución temporal", path: "#privacidad-habito" }
     ]
   }
 
@@ -161,8 +150,8 @@ const sections = [
     <div id="contenido">
 
       <section class="p-6 rounded-lg mt-6 ">
-        <h1 id="entorno-privacidad" class="text-xl font-bold">Entorno Personalizado de Privacidad</h1>
-        <h2 id="">Introducción a la Privacidad y el Modelo de amenaza</h2>
+        <h1 id="entorno-privacidad" class="text-4xl p-6 font-bold">Entorno Personalizado de Privacidad</h1>
+        <h2 id="" >Introducción a la Privacidad y el Modelo de amenaza</h2>
   
         <p class="text-gray-800 mt-4">
           La privacidad no es solo para los que tienen algo que esconder. Es una herramienta esencial para proteger tus datos, tu seguridad y tu tranquilidad. En un mundo donde cada clic es monitoreado, entender tu modelo de amenaza es el primer paso para mejorar tu privacidad.
@@ -185,8 +174,8 @@ const sections = [
 
 <h2> ¿Por qué es importante proteger tu información?</h2>
 
-  <p> Las empresas venden tus datos: Cada búsqueda en Google, cada compra online y cada foto en redes sociales genera información que las empresas recopilan y venden.</p>
-  <p>Los gobiernos te rastrean: Muchos países han implementado vigilancia masiva, recopilando datos sin tu consentimiento.</p>
+  <p> Las empresas venden tus datos: Cada búsqueda en Google, cada compra online y cada foto en redes sociales genera información que las empresas recopilan y venden.
+  Los gobiernos te rastrean: Muchos países han implementado vigilancia masiva, recopilando datos sin tu consentimiento.</p>
   <p>Los ciberdelincuentes buscan vulnerabilidades: Sin medidas de seguridad, puedes ser víctima de fraude, suplantación de identidad o doxxing.</p>
   <p> Privacidad es control: Al proteger tu información, decides qué compartes y con quién.</p>
 
@@ -264,7 +253,7 @@ Escoge tu nivel y sigue las secciones específicas para implementar un plan a tu
   🔐 Objetivo: Configurar un entorno digital libre de rastreo, vigilancia y vulnerabilidades.
 </p>
 
-<h2>
+<h2 id="laptops-privacidad">
   Mejores laptops para privacidad (Linux, System76)
 </h2>
 
@@ -300,7 +289,7 @@ Escoge tu nivel y sigue las secciones específicas para implementar un plan a tu
 
 </ul>
 
-<h2>
+<h2 id="moviles-privados">
   Dispositivos móviles privados
 </h2>
 
@@ -355,7 +344,7 @@ Escoge tu nivel y sigue las secciones específicas para implementar un plan a tu
 
 </p>
 
-<h2>Uso de máquinas virtuales para anonmimato</h2>
+<h2 id="maquinas-virtuales">Uso de máquinas virtuales para anonmimato</h2>
 
 <p>Si necesitas ejecutar sistemas en un entorno seguro, usa máquinas virtuales (VMs) para aislar actividades sensibles.</p>
 
@@ -373,7 +362,7 @@ Escoge tu nivel y sigue las secciones específicas para implementar un plan a tu
 
 <p>📌<span class="font-bold">Ejemplo de uso:</span>Usar una VM con Linux para acceso bancario y otra VM diferente para navegación diaria.</p>
 
-<h2>Autohospedaje y sevidores privados</h2>
+<h2 id="autohospedaje">Autohospedaje y sevidores privados</h2>
 <p>La nube pública es una mina de oro para las empresas de datos. Si realmente quieres privacidad, necesitas tu propio servidor.</p>
 
 <h3>🔹 Ventajas de autohospedar tus datos:
@@ -409,7 +398,7 @@ Escoge tu nivel y sigue las secciones específicas para implementar un plan a tu
   </li>
 </ul>
 
-<h2>
+<h2 id="firewalls-segmentacion">
   Firewalls y segmentación de redes
 </h2>
 
@@ -465,7 +454,7 @@ Escoge tu nivel y sigue las secciones específicas para implementar un plan a tu
 
 
 
-<h2>Mejores distribuciones de Linux para privacidad</h2>
+<h2 id="linux-privacidad" >Mejores distribuciones de Linux para privacidad</h2>
 
 
 <p>Linux es el mejor sistema operativo para privacidad y seguridad. Existen muchas distribuciones, pero aquí te recomendamos las mejores según tus necesidades:
@@ -503,7 +492,7 @@ Si eres principiante, instala Pop!_OS o Linux Mint.
 Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
 </p>
 
-<h2>Instalación y Configuración de Pop!_OS</h2>
+<h2 id="popos" >Instalación y Configuración de Pop!_OS</h2>
 <p>Pop!_OS es un sistema basado en Ubuntu, pero sin rastreo y con cifrado de disco completo.
 
 </p>
@@ -544,7 +533,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
     </ul>
     
     
-<h2>Uso de Qubes OS para Máxima Seguridad</h2>
+<h2 id="qubes-os">Uso de Qubes OS para Máxima Seguridad</h2>
 <p>Qubes OS es un sistema operativo que aisla cada aplicación en su propia máquina virtual.
 
 </p>
@@ -577,7 +566,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
 
 </p>
 
-<h2>Personalización y Optimización para Privacidad</h2>
+<h2 id="personalizacion" >Personalización y Optimización para Privacidad</h2>
 
 <p>Una vez que tengas un sistema operativo privado, es importante optimizarlo para evitar filtraciones de datos.
 </p>
@@ -609,7 +598,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
       
     <!-- Navegadores Privados -->
 
-          <h2> Navegadores Privados: Evita el Rastreo Online</h2>
+          <h2 id="navegadores"> Navegadores Privados: Evita el Rastreo Online</h2>
           <p>Los navegadores comerciales como Google Chrome recopilan datos constantemente. Usa navegadores diseñados para privacidad:</p>
           <ul>
               <li>🔥 <strong>Firefox (con ajustes avanzados)</strong> – Código abierto y configurable.</li>
@@ -618,8 +607,8 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
           </ul>
   
       <!-- Administradores de Contraseñas -->
-      <article id="password-managers">
-          <h2 id="password-managers"> Administradores de Contraseñas y 2FA</h2>
+      <article id="2fa">
+          <h2 id="2fa"> Administradores de Contraseñas y 2FA</h2>
           <ul>
               <li>🔐 <strong>Bitwarden</strong> – Código abierto y cifrado.</li>
               <li>🛡️ <strong>KeePassXC</strong> – Almacenamiento local sin conexión a internet.</li>
@@ -651,7 +640,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
       </article>
   
       <!-- Mensajería Privada -->
-      <article id="mensajeria-privada">
+      <article id="mensajeria">
           <h2> Mensajería Segura y Privada</h2>
           <p>Servicios como WhatsApp y Telegram tienen problemas de privacidad. Usa apps con cifrado real.</p>
           <ul>
@@ -707,21 +696,8 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
           </ul>
       </article>
   
-      <!-- Software Adicional -->
-      <article id="software-adicional">
-          <h2>🛡️ Software Adicional para Protección de Datos</h2>
-          <p>Además de lo anterior, existen herramientas clave para proteger archivos y datos sensibles.</p>
-          <ul>
-              <li>📂 <strong>VeraCrypt</strong> – Cifrado de discos y archivos.</li>
-              <li>🖥️ <strong>Tails OS (Live USB)</strong> – Sistema operativo portátil sin rastros.</li>
-              <li>🔏 <strong>MAT2</strong> – Elimina metadatos de archivos e imágenes.</li>
-              <li>💾 <strong>Syncthing</strong> – Alternativa privada a Google Drive.</li>
-          </ul>
-          <p>📢 Consejo: Usa VeraCrypt para cifrar discos duros y USBs con información sensible.</p>
-      </article>
-  
       <!-- Conclusión -->
-      <article id="conclusion-software">
+      <article id="">
           <h3>🔎 Conclusión: Software que Protege tu Privacidad</h3>
           <p>
               No puedes confiar en software que registra tus datos. Usa herramientas que realmente protejan tu información:
@@ -746,7 +722,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
     <p><strong>🔐 Objetivo:</strong> Aprender a ocultar tu identidad real en internet, crear alias efectivos y evitar que tu información personal sea vinculada a ti.</p>
 
     <!-- Creación de Alias -->
-    <article id="creacion-alias">
+    <article id="alias">
         <h2> Creación y Manejo de Alias</h2>
         <p>Un alias es un nombre falso o alternativo que puedes usar en diferentes contextos para evitar que tu identidad real quede expuesta.</p>
         <h3>🔹 Cómo crear un alias efectivo:</h3>
@@ -783,7 +759,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
     </article>
 
     <!-- Uso de Números VOIP -->
-    <article id="uso-voip">
+    <article id="voip">
         <h2> Uso de Números de Teléfono Virtuales (VOIP)</h2>
         <p>Tu número de teléfono es <strong>uno de los datos más fáciles de rastrear</strong> y muchas empresas lo usan como identificador único.</p>
 
@@ -837,7 +813,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
     </article>
 
     <!-- Conclusión -->
-    <article id="conclusion-identidad">
+    <article id="">
         <h2>🔎 Conclusión: Control Total sobre tu Identidad Digital</h2>
         <p>La privacidad no es solo ocultar información, sino <strong>controlar quién tiene acceso a ella y cómo se usa</strong>.</p>
         <ul>
@@ -848,10 +824,10 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
     </article>
 </section>
 
-<section id="gestion-identidad" class="p-6 rounded-lg mt-6 ">
+<section id="" class="p-6 rounded-lg mt-6 ">
 
-  <section id="privacidad-finanzas">
-    <h2>Privacidad en Finanzas y Pagos</h2>
+  <section id="finanzas-privacidad" class="p-6 rounded-lg ">
+    <h1>Privacidad en Finanzas y Pagos</h1>
     <p>El dinero es una de las áreas donde la privacidad es más difícil de mantener. Cada transacción con 
         <strong>tarjetas bancarias, cuentas tradicionales o pagos digitales</strong> deja un rastro que puede ser rastreado 
         por bancos, gobiernos y empresas.</p>
@@ -861,7 +837,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
 
     <!-- Métodos de Pago Anónimos -->
     <article id="metodos-pago">
-        <h3> Métodos de Pago Anónimos</h3>
+        <h2> Métodos de Pago Anónimos</h2>
         <p>Las tarjetas de crédito y los pagos electrónicos como <strong>PayPal, Apple Pay y Google Pay son totalmente rastreables</strong>.
             Si buscas anonimato, necesitas <strong>métodos de pago que no vinculen tu identidad real a la transacción</strong>.</p>
         
@@ -873,29 +849,10 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
         </ul>
     </article>
 
-    <!-- Uso de Criptomonedas para Privacidad -->
-    <article id="criptomonedas">
-        <h3> Uso correcto de criptomonedas para privacidad</h3>
-        <p>Las criptomonedas pueden ser privadas, pero la mayoría <strong>son rastreables</strong> si no tomas precauciones.</p>
-
-        <ul>
-            <li>💰 <strong>Bitcoin (No es 100% anónimo)</strong> → Es rastreable, a menos que uses herramientas como CoinJoin.</li>
-            <li>💰 <strong>Monero (XMR) (Totalmente privado)</strong> → No deja rastros ni transacciones públicas.</li>
-        </ul>
-
-        <h4> Cómo comprar Monero de forma privada:</h4>
-        <ol>
-            <li>Usa una plataforma sin KYC (<em>Know Your Customer</em>) como <strong>LocalMonero</strong>.</li>
-            <li>Compra con efectivo o tarjetas prepago en persona.</li>
-            <li>Usa una billetera privada como <strong>Monerujo</strong> o <strong>Cake Wallet</strong>.</li>
-        </ol>
-
-        <p><strong>📢 Consejo:</strong> Nunca compres criptomonedas en <strong>Coinbase, Binance o plataformas centralizadas</strong> si buscas privacidad.</p>
-    </article>
 
     <!-- Cuentas Bancarias Privadas -->
-    <article id="cuentas-bancarias">
-        <h3>Configuración de Cuentas Bancarias Privadas</h3>
+    <article id="cuentas-privadas">
+        <h2>Configuración de Cuentas Bancarias Privadas</h2>
         <p>Los bancos tradicionales <strong>registran todas tus transacciones</strong> y pueden compartir esta información con gobiernos y terceros.</p>
 
         <h4>🔹 Cómo mantener privacidad en tus cuentas bancarias:</h4>
@@ -908,8 +865,8 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
     </article>
 
     <!-- Compra y Alquiler de Propiedades -->
-    <article id="propiedades-anonimas">
-        <h3> Compra y Alquiler de Propiedades de Forma Anónima</h3>
+    <article id="comprar-anonimamente">
+        <h2> Compra y Alquiler de Propiedades de Forma Anónima</h2>
         <p>Si compras una propiedad o alquilas usando tu nombre real, <strong>dejas un rastro permanente</strong> en bases de datos públicas.</p>
 
         <h4>🔹 Métodos para comprar/alquilar sin exponer tu identidad:</h4>
@@ -921,8 +878,8 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
     </article>
 
     <!-- Comercio Electrónico Privado -->
-    <article id="compras-online">
-        <h3> Comercio Electrónico Sin Exponer Tu Identidad</h3>
+    <article id="ecomerce-privado">
+        <h2> Comercio Electrónico Sin Exponer Tu Identidad</h2>
         <p>Las tiendas en línea <strong>registran tu dirección, método de pago y hábitos de compra</strong>.</p>
 
         <h4>🔹 Cómo comprar en línea sin exponer tu privacidad:</h4>
@@ -938,7 +895,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
 
     <!-- Conclusión -->
     <article id="conclusion-finanzas">
-        <h3> Conclusión: Controlando tu Privacidad Financiera</h3>
+        <h2> Conclusión: Controlando tu Privacidad Financiera</h2>
         <p>Tu dinero es <strong>uno de los últimos lugares donde aún puedes mantener privacidad</strong>, pero requiere planificación.</p>
         <ul>
             <li>✅ <strong>Usa criptomonedas privadas como Monero</strong> en lugar de Bitcoin público.</li>
@@ -946,117 +903,25 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
             <li>✅ <strong>Compra y alquila propiedades de forma anónima</strong> con LLCs o pagos en efectivo.</li>
             <li>✅ <strong>Haz compras online sin revelar tu identidad</strong> con tarjetas prepago y alias.</li>
         </ul>
-        <p>📌 <strong>Siguiente paso:</strong> <a href="#privacidad-fisica">🏡 Privacidad Física y Eliminación de Rastro</a></p>
+       
     </article>
 
   </section>
   
 </section>
      
+
     
-<section id="gestion-identidad" class="p-6 rounded-lg mt-6 ">
-
-  <section id="privacidad-fisica">
-    <h2>Privacidad Física y Eliminación de Rastro</h2>
-    <p>Tu privacidad no solo depende del mundo digital. En la vida real, <strong>tu dirección, tus movimientos y tus hábitos pueden ser rastreados fácilmente</strong>. Gobiernos, empresas y delincuentes pueden recopilar datos sobre tu ubicación y patrones de vida para <strong>seguir tu rastro</strong>.</p>
-    <p>Para mantener una privacidad completa, debes aprender a <strong>ocultar tu ubicación, usar direcciones alternativas y evitar ser rastreado en la vida diaria</strong>.</p>
-    <p><strong>Objetivo:</strong> Reducir al mínimo tu exposición en el mundo físico y asegurarte de que <strong>nadie pueda rastrear tu paradero o encontrar tu dirección real</strong>.</p>
-
-    <!-- Uso de Direcciones de Reenvío y Buzones Seguros -->
-    <article id="direcciones-reenvio">
-        <h3>Uso de Direcciones de Reenvío y Buzones Seguros</h3>
-        <p>Cada vez que das tu dirección real para compras en línea, registros gubernamentales o bancos, <strong>estás creando una conexión permanente con tu ubicación</strong>.</p>
-        
-        <h4>Cómo ocultar tu dirección real</h4>
-        <ul>
-            <li>✅ <strong>Usa un servicio de reenvío de correo</strong> → Empresas como <em>Earth Class Mail</em> o <em>VirtualPostMail</em> te permiten recibir correspondencia sin usar tu dirección real.</li>
-            <li>✅ <strong>Utiliza un buzón privado</strong> → Algunos servicios de mensajería permiten el uso de buzones alternativos.</li>
-            <li>✅ <strong>Nunca registres tu dirección en compras en línea</strong> → Usa direcciones de reenvío en su lugar.</li>
-        </ul>
-        <p><strong>Consejo:</strong> Si tienes que registrar una dirección oficial, considera usar una dirección comercial o de reenvío en lugar de tu domicilio.</p>
-    </article>
-
-    <!-- Estrategias para Viviendas y Hospedajes Privados -->
-    <article id="viviendas-privadas">
-        <h3>Estrategias para Viviendas y Hospedajes Privados</h3>
-        <p>Si rentas o compras una casa a tu nombre, <strong>tu dirección quedará registrada en bases de datos gubernamentales</strong>.</p>
-
-        <h4>Cómo vivir sin dejar rastro</h4>
-        <ul>
-            <li>🏡 <strong>Usa una LLC o Trust para comprar propiedad</strong> → Esto evita que la propiedad aparezca a tu nombre en registros públicos.</li>
-            <li>💰 <strong>Renta a través de intermediarios</strong> → Paga con criptomonedas o efectivo si es posible.</li>
-            <li>🏨 <strong>Usa hoteles o alquileres a corto plazo</strong> → Evita rentas a largo plazo con tu nombre real.</li>
-        </ul>
-        <p><strong>Consejo:</strong> Si quieres evitar el rastreo en hoteles, paga en efectivo o usa una identidad alternativa para las reservas.</p>
-    </article>
-
-    <!-- Prevención del Rastreo en Viajes y Ubicación -->
-    <article id="viajes-sin-rastro">
-        <h3>Prevención del Rastreo en Viajes y Ubicación</h3>
-        <p>Cada vez que viajas, <strong>dejas un rastro digital</strong> con boletos de avión, reservas de hoteles y pagos con tarjeta.</p>
-
-        <h4>Cómo viajar sin ser rastreado</h4>
-        <ul>
-            <li>✈️ <strong>Evita usar tarjetas de crédito para comprar boletos</strong> → Usa tarjetas prepago o criptomonedas donde sea posible.</li>
-            <li>📍 <strong>Desactiva la ubicación de tu teléfono</strong> → O usa un dispositivo separado para viajes.</li>
-            <li>🚗 <strong>Evita el uso de servicios de transporte que requieren cuenta</strong> → Usa taxis en lugar de Uber o Lyft.</li>
-        </ul>
-        <p><strong>Consejo:</strong> Si viajas a otro país, usa una SIM anónima comprada en efectivo para evitar que tu ubicación sea rastreada.</p>
-    </article>
-
-    <!-- Propiedad y Registro de Vehículos Anónimos -->
-    <article id="vehiculos-anonimos">
-        <h3>Propiedad y Registro de Vehículos Anónimos</h3>
-        <p>Si compras un vehículo con tu nombre real, <strong>tu identidad estará vinculada a la matrícula y será accesible en bases de datos</strong>.</p>
-
-        <h4>Cómo tener un vehículo sin dejar rastro</h4>
-        <ul>
-            <li>🚗 <strong>Compra a través de una LLC o tercero de confianza</strong> → Así el vehículo no estará a tu nombre.</li>
-            <li>⛽ <strong>Evita sistemas de pago con tarjetas en gasolineras</strong> → Usa efectivo o tarjetas prepago.</li>
-            <li>📡 <strong>Desactiva GPS y rastreo en el vehículo</strong> → Muchos autos modernos envían datos a la empresa fabricante.</li>
-        </ul>
-        <p><strong>Consejo:</strong> Usa transportes públicos o vehículos de alquiler si quieres evitar la conexión con tu identidad.</p>
-    </article>
-
-    <!-- Estilo de Vida Nómada y Fuera del Radar -->
-    <article id="vida-nomada">
-        <h3>Estilo de Vida Nómada y Fuera del Radar</h3>
-        <p>Si necesitas <strong>privacidad extrema</strong>, puedes optar por un estilo de vida sin dirección fija y difícil de rastrear.</p>
-
-        <h4>Estrategias para una vida fuera del radar</h4>
-        <ul>
-            <li>🛖 <strong>Usa múltiples ubicaciones</strong> → No pases demasiado tiempo en un solo lugar.</li>
-            <li>🛂 <strong>Evita documentos y registros innecesarios</strong> → No proporciones datos reales a menos que sea obligatorio.</li>
-            <li>🚍 <strong>Vive en una casa rodante o vehículo modificado</strong> → No depender de una propiedad fija te hace más difícil de rastrear.</li>
-        </ul>
-    </article>
-
-    <!-- Conclusión -->
-    <article id="conclusion-privacidad-fisica">
-        <h3>Conclusión: Manteniendo tu Privacidad en el Mundo Físico</h3>
-        <p>Reducir tu huella física es <strong>tan importante como proteger tu privacidad digital</strong>.</p>
-        <ul>
-            <li>✅ <strong>Usa direcciones alternativas</strong> para evitar que se registre tu ubicación real.</li>
-            <li>✅ <strong>Compra propiedades y vehículos a través de LLCs o Trusts.</strong></li>
-            <li>✅ <strong>Viaja sin ser rastreado</strong> usando pagos anónimos y dispositivos separados.</li>
-            <li>✅ <strong>Vive fuera del radar</strong> con estrategias de movilidad y hospedaje privado.</li>
-        </ul>
-        <p><strong>Siguiente paso:</strong> <a href="#proteccion-datos">Protección y Eliminación de Datos</a></p>
-    </article>
-</section>
-
-</section>
-    
-<section id="gestion-identidad" class="p-6 rounded-lg mt-6 ">
+<section id="" class="p-6 rounded-lg mt-6 ">
   <section id="proteccion-datos">
-    <h2>Protección y Eliminación de Datos</h2>
+    <h1>Protección y Eliminación de Datos</h1>
     <p>En la era digital, <strong>cada interacción que tienes en internet deja un rastro</strong>. Las empresas recopilan datos personales para perfilarte, los gobiernos pueden rastrear tu actividad y los ciberdelincuentes pueden explotar información filtrada.</p>
     <p>Para mantener tu privacidad, <strong>no basta con evitar exponer datos nuevos</strong>: también debes <strong>eliminar la información existente</strong> de internet y evitar que nuevas filtraciones ocurran.</p>
     <p><strong>Objetivo:</strong> Aprender cómo borrar información personal de bases de datos públicas, evitar filtraciones de datos y minimizar tu huella digital.</p>
 
     <!-- Cómo Eliminar Tus Datos de Internet -->
     <article id="eliminar-datos">
-        <h3>Cómo Eliminar Tus Datos de Internet</h3>
+        <h2>Cómo Eliminar Tus Datos de Internet</h2>
         <p>Tu información personal puede estar en sitios de bases de datos públicas, redes sociales, registros gubernamentales y empresas de recopilación de datos.</p>
 
         <h4>Pasos para eliminar tu información personal</h4>
@@ -1072,7 +937,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
 
     <!-- Congelación de Datos y Eliminación -->
     <article id="congelacion-datos">
-        <h3>Congelación de Datos y Solicitudes de Eliminación</h3>
+        <h2>Congelación de Datos y Solicitudes de Eliminación</h2>
         <p>Algunas empresas y gobiernos venden información personal sin consentimiento. <strong>Congelar y eliminar estos datos es clave para la privacidad.</strong></p>
 
         <h4>Cómo evitar que terceros vendan tu información</h4>
@@ -1085,8 +950,8 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
     </article>
 
     <!-- Estrategias de Desinformación -->
-    <article id="desinformacion">
-        <h3>Estrategias de Desinformación para Privacidad</h3>
+    <article id="desinformacion-privacidad">
+        <h2>Estrategias de Desinformación para Privacidad</h2>
         <p>Si no puedes eliminar completamente tus datos de internet, <strong>la desinformación es una excelente defensa</strong>.</p>
 
         <h4>Cómo engañar a los recopiladores de datos</h4>
@@ -1100,8 +965,8 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
     </article>
 
     <!-- Concienciación sobre OSINT -->
-    <article id="osint">
-        <h3>Concienciación sobre OSINT y Rastreo en Línea</h3>
+    <article id="osint-rastreo">
+        <h2>Concienciación sobre OSINT y Rastreo en Línea</h2>
         <p>El Open Source Intelligence (<strong>OSINT</strong>) es una técnica utilizada para recopilar información pública sobre una persona.</p>
 
         <h4>Métodos que usan para rastrearte</h4>
@@ -1124,7 +989,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
 
     <!-- Conclusión -->
     <article id="conclusion-datos">
-        <h3>Conclusión: Minimiza tu Huella Digital</h3>
+        <h2>Conclusión: Minimiza tu Huella Digital</h2>
         <p>Tu privacidad depende de <strong>qué tan bien puedas eliminar y ocultar tu información personal</strong>.</p>
         <ul>
             <li>✅ <strong>Elimina datos de bases de datos públicas y redes sociales.</strong></li>
@@ -1132,7 +997,6 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
             <li>✅ <strong>Usa estrategias de desinformación para evitar el rastreo.</strong></li>
             <li>✅ <strong>Concientízate sobre OSINT y evita dejar rastros innecesarios en línea.</strong></li>
         </ul>
-        <p><strong>Siguiente paso:</strong> <a href="#estrategias-emergencia">Estrategias de Emergencia y Seguridad</a></p>
     </article>
 </section>
 
@@ -1140,17 +1004,17 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
 </section>    
     
 
-<section id="gestion-identidad" class="p-6 rounded-lg mt-6 ">
+<section id="" class="p-6 rounded-lg mt-6 ">
 
-  <section id="estrategias-emergencia">
-    <h2>Estrategias de Emergencia y Seguridad</h2>
+  <section id="emergencia-seguridad">
+    <h1>Estrategias de Emergencia y Seguridad</h1>
     <p>Incluso con las mejores prácticas de privacidad, <strong>siempre existe el riesgo de que tu información se filtre, seas víctima de un ataque o enfrentes una amenaza directa</strong>. Saber cómo responder en situaciones críticas es esencial para proteger tu privacidad y seguridad.</p>
     <p>En esta sección, aprenderás <strong>qué hacer si eres víctima de doxxing, cómo proteger tus datos críticos y qué medidas tomar en caso de una filtración de privacidad o hackeo</strong>.</p>
     <p><strong>Objetivo:</strong> Tener un plan de respuesta ante amenazas inmediatas para minimizar el daño y recuperar la privacidad en caso de una filtración.</p>
 
     <!-- Qué Hacer si Eres Víctima de Doxxing -->
     <article id="doxxing">
-        <h3>¿Qué Hacer si Eres Víctima de Doxing?</h3>
+        <h2>¿Qué Hacer si Eres Víctima de Doxing?</h2>
         <p>El doxxing ocurre cuando <strong>alguien expone tu información personal en internet</strong> sin tu consentimiento, incluyendo tu nombre, dirección, número de teléfono o datos financieros.</p>
 
         <h4>Pasos para minimizar el daño</h4>
@@ -1166,7 +1030,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
 
     <!-- Copias de Seguridad Cifradas -->
     <article id="copias-seguridad">
-        <h3>Copias de Seguridad Cifradas y Redundancia de Datos</h3>
+        <h2>Copias de Seguridad Cifradas y Redundancia de Datos</h2>
         <p>Si pierdes acceso a tus cuentas o dispositivos, <strong>tener copias de seguridad seguras y accesibles</strong> puede marcar la diferencia.</p>
 
         <h4>Cómo crear un sistema de respaldo seguro</h4>
@@ -1180,8 +1044,8 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
     </article>
 
     <!-- Preparación para Desastres y Emergencias -->
-    <article id="preparacion-emergencias">
-        <h3>Preparación para Desastres y Emergencias</h3>
+    <article id="preparacion-desastres">
+        <h2>Preparación para Desastres y Emergencias</h2>
         <p>Si enfrentas una crisis grave, como un hackeo masivo, una amenaza de seguridad o una confiscación de datos, <strong>tener un plan de emergencia te permitirá actuar sin pánico</strong>.</p>
 
         <h4>Estrategias para estar preparado</h4>
@@ -1195,8 +1059,8 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
     </article>
 
     <!-- Manejo de una Filtración de Privacidad -->
-    <article id="filtracion-datos">
-        <h3>Cómo Manejar una Filtración de Privacidad</h3>
+    <article id="filtracion-privacidad">
+        <h2>Cómo Manejar una Filtración de Privacidad</h2>
         <p>Si tus datos personales, credenciales o archivos sensibles han sido filtrados en internet, <strong>debes actuar de inmediato para minimizar el daño</strong>.</p>
 
         <h4>Qué hacer si descubres una filtración</h4>
@@ -1211,7 +1075,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
 
     <!-- Conclusión -->
     <article id="conclusion-emergencia">
-        <h3>Conclusión: Protección en Situaciones de Crisis</h3>
+        <h2>Conclusión: Protección en Situaciones de Crisis</h2>
         <p>Los ataques a la privacidad pueden ocurrir en cualquier momento, y <strong>estar preparado marcará la diferencia entre una filtración menor o un daño irreparable</strong>.</p>
         <ul>
             <li>✅ <strong>Si eres víctima de doxxing</strong>, actúa rápidamente y protege tu información expuesta.</li>
@@ -1226,17 +1090,17 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
 
   </section>
 
-  <section id="gestion-identidad" class="p-6 rounded-lg mt-6 ">
+  <section id="" class="p-6 rounded-lg mt-6 ">
   
     <section id="ruta-privacidad">
-      <h2>Ruta Personalizada de Privacidad</h2>
+      <h1>Ruta Personalizada de Privacidad</h1>
       <p>Cada persona tiene necesidades de privacidad diferentes. No todos necesitan el mismo nivel de anonimato, pero <strong>todos deben tomar medidas para proteger su información personal</strong>.</p>
       <p>En esta sección, te ayudaré a <strong>elegir el camino adecuado según tu modelo de amenaza</strong>, es decir, <strong>qué tan protegido necesitas estar</strong> y qué medidas debes implementar según tu perfil.</p>
       <p><strong>Objetivo:</strong> Definir un <strong>plan de privacidad personalizado</strong> según tu nivel de riesgo y necesidades específicas.</p>
   
       <!-- Elección del Nivel de Privacidad -->
       <article id="niveles-privacidad">
-          <h3>Elige Tu Nivel de Privacidad</h3>
+          <h2>Elige Tu Nivel de Privacidad</h2>
           <p>Antes de tomar medidas, identifica <strong>cuál de estos niveles de privacidad</strong> se adapta mejor a tu caso:</p>
   
           <h4>Privacidad Básica (Usuarios promedio)</h4>
@@ -1274,7 +1138,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
   
       <!-- Pasos Finales para Mantener la Privacidad -->
       <article id="pasos-finales">
-          <h3>Pasos Finales para Mantener tu Privacidad</h3>
+          <h2>Pasos Finales para Mantener tu Privacidad</h2>
           <p>No importa el nivel de privacidad que elijas, es importante mantener <strong>hábitos de seguridad a largo plazo</strong>.</p>
   
           <h4>Recomendaciones generales para todos los niveles</h4>
@@ -1290,7 +1154,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
   
       <!-- Conclusión -->
       <article id="conclusion-ruta">
-          <h3>Conclusión: Tu Privacidad, Tu Elección</h3>
+          <h2>Conclusión: Tu Privacidad, Tu Elección</h2>
           <p>No todas las personas necesitan el mismo nivel de privacidad, pero <strong>todos deberían tomar medidas para proteger su información personal</strong>.</p>
           <ul>
               <li>✅ <strong>Si solo buscas mayor seguridad</strong>, sigue el nivel básico.</li>
@@ -1306,16 +1170,16 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
 
 
 
-  <section id="gestion-identidad" class="p-6 rounded-lg mt-6 ">
-    <section id="pasos-finales-privacidad">
-      <h2>Pasos Finales para Mantener tu Privacidad</h2>
+  <section id="" class="p-6 rounded-lg mt-6 ">
+    <section id="pasos-finales">
+      <h1>Pasos Finales para Mantener tu Privacidad</h1>
       <p>Ahora que has recorrido todas las secciones sobre privacidad, es importante <strong>mantener y reforzar las medidas a largo plazo</strong>. La privacidad no es un estado que se alcanza una vez, sino un <strong>proceso continuo</strong> en el que debes estar atento a nuevas amenazas y adaptar tus estrategias.</p>
       <p>En esta sección, te proporcionaré una <strong>guía de evaluación final</strong> para que revises tu nivel de privacidad, identifiques puntos débiles y adoptes buenas prácticas para mantener tu seguridad digital y física.</p>
       <p><strong>Objetivo:</strong> Crear un plan sostenible para <strong>seguir mejorando y manteniendo tu privacidad</strong> en el tiempo.</p>
   
       <!-- Evaluación de la Huella Digital -->
-      <article id="evaluacion-huella">
-          <h3>Evaluar y Reforzar tu Huella Digital</h3>
+      <article id="huella-digital">
+          <h2>Evaluar y Reforzar tu Huella Digital</h2>
           <p>Tu huella digital es toda la información que existe sobre ti en internet. Con el tiempo, puede expandirse y volverse más difícil de controlar si no la supervisas regularmente.</p>
   
           <h4>Cómo revisar y reducir tu huella digital</h4>
@@ -1329,8 +1193,8 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
       </article>
   
       <!-- Mejorar Puntos Débiles -->
-      <article id="mejorar-seguridad">
-          <h3>Mejorar Puntos Débiles y Actualizar Herramientas</h3>
+      <article id="mejorar-privacidad">
+          <h2>Mejorar Puntos Débiles y Actualizar Herramientas</h2>
           <p>A medida que la tecnología avanza, <strong>las amenazas a la privacidad también cambian</strong>. Es importante mantenerse actualizado y mejorar continuamente las herramientas que usas.</p>
   
           <h4>Revisión y mejora de seguridad digital</h4>
@@ -1345,7 +1209,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
   
       <!-- Mantenerse Informado -->
       <article id="informacion-privacidad">
-          <h3>Mantenerse Informado sobre Amenazas y Tendencias</h3>
+          <h2>Mantenerse Informado sobre Amenazas y Tendencias</h2>
           <p>El mundo de la privacidad y la ciberseguridad está en constante cambio. Lo que hoy es seguro, mañana puede no serlo.</p>
   
           <h4>Cómo estar al día con la privacidad</h4>
@@ -1360,7 +1224,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
   
       <!-- Convertir la Privacidad en un Hábito -->
       <article id="privacidad-habito">
-          <h3>Convertir la Privacidad en un Hábito</h3>
+          <h2>Convertir la Privacidad en un Hábito</h2>
           <p>Más que una serie de herramientas, <strong>la privacidad debe convertirse en una forma de vida</strong>. No sirve de nada aplicar medidas de seguridad una vez y luego olvidarlas.</p>
   
           <h4>Consejos para hacer de la privacidad un hábito</h4>
@@ -1375,7 +1239,7 @@ Si necesitas máxima privacidad, usa Qubes OS o Tails OS.
   
       <!-- Conclusión -->
       <article id="conclusion-final">
-          <h3>Conclusión: La Privacidad es un Viaje, No un Destino</h3>
+          <h2>Conclusión: La Privacidad es un Viaje, No un Destino</h2>
           <p>La privacidad no se logra de la noche a la mañana, <strong>es un esfuerzo constante</strong> que requiere evaluación, mejora y adaptación a nuevas tecnologías y amenazas.</p>
           <ul>
               <li>🛠️ <strong>Evalúa regularmente tu huella digital y elimina información expuesta.</strong></li>
@@ -1431,14 +1295,14 @@ aside h2 a:hover{
   border-radius: 1rem;
 }
 
-  ul li {
+  aside ul li {
     list-style-type: disc;
     margin-left: 2rem;
     font-style: italic;
     line-height: 0.9rem;
   }
 
-  ul li:hover {
+ aside ul li:hover {
     text-decoration: underline;
   }
 
@@ -1447,6 +1311,37 @@ aside h2 a:hover{
     background-color: #878787;
     border-radius: 1rem;
   }
+
+section h1{
+ 
+text-align: center;
+color: #313131;
+font-size: 2.5rem;
+padding: 2rem;
+
+}
+
+section h2 {
+ color: #101010;
+ font-weight: bold;
+ padding: 1rem;
+font-size: 1.5rem;
+}
+
+section p, h3, h4 {
+  padding: 0.7rem;
+}
+section ul li{
+  padding: 0.2rem;
+  font-weight: bold;
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+section h3, h4{
+  font-weight: bold;
+}
+
 
   #titulo {
     color: #3F3F3F;
