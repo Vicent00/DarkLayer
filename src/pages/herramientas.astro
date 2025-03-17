@@ -14,10 +14,6 @@ const sections = [
     path: "#navegacion-segura",
   },
   {
-    title: "VPNs y DNS Privados",
-    path: "#vpns-dns",
-  },
-  {
     title: "Mensajería y Comunicación Segura",
     path: "#mensajeria-segura",
   },
@@ -81,19 +77,16 @@ const sections = [
     <!-- Main content -->
 
 <main class="ml-105 -mt-50 p-6 rounded-lg">
- 
+    <h2 id="titulo" class="text-4xl p-6 font-bold"> Herramientas de privacidad</h2>
+
  
     <div id="contenido">
  
         <section>
-
-
-            <h2 class="text-4xl p-6 font-bold"> Herramientas de privacidad</h2>
-
         
         
             
-            <section id=#sistemas-operativos>
+            <section id="sistemas-operativos" >
                 <h2> Sistemas Operativos Privados</h2>
                 <p>La base de cualquier estrategia de privacidad y seguridad comienza con el sistema operativo. Windows y macOS están diseñados para recolectar datos del usuario y enviarlos a servidores de Microsoft y Apple. Esto incluye el historial de actividad, 
                     los programas usados, la ubicación del dispositivo, la dirección IP y metadatos de archivos.</p>
@@ -108,7 +101,7 @@ const sections = [
                     requiere cuenta en línea para su instalación y permite a Microsoft instalar software sin el permiso del usuario.</p>
             
                 <h4>macOS: Una Alternativa con Limitaciones</h4>
-                <p>macOS está vinculado con Apple ID, lo que empuja al usuario a usar servicios en la nube de Apple. También registra cada aplicación utilizada, es un sistema cerrado sin posibilidad de auditoría y no ofrece control total sobre procesos en segundo plano.</p>
+                <p>MacOS está vinculado con Apple ID, lo que empuja al usuario a usar servicios en la nube de Apple. También registra cada aplicación utilizada, es un sistema cerrado sin posibilidad de auditoría y no ofrece control total sobre procesos en segundo plano.</p>
             
                 <p>Si buscas verdadera privacidad y seguridad, es hora de cambiar a un sistema operativo privado.</p>
             
@@ -132,13 +125,13 @@ const sections = [
             
                 <h3>Cómo Hacer la Transición a un Sistema Privado</h3>
                 <p>Si has decidido dejar Windows o macOS, sigue estos pasos:</p>
-                <ol>
+                <ul>
                     <li>Elige el sistema operativo que mejor se adapte a tus necesidades.</li>
                     <li>Haz una copia de seguridad de tus archivos en un disco cifrado.</li>
                     <li>Descarga el sistema desde su web oficial para evitar versiones manipuladas.</li>
                     <li>Crea un USB booteable con herramientas como Balena Etcher o Rufus.</li>
                     <li>Instala y configura tu sistema con ajustes de privacidad óptimos.</li>
-                </ol>
+                </ul>
                 <p>Si no puedes cambiar de sistema operativo inmediatamente, prueba una versión en USB antes de hacer la instalación definitiva.</p>
             
                 <h3>Conclusión: Controla tu Sistema, Controla tu Privacidad</h3>
@@ -147,86 +140,7 @@ const sections = [
             
             </section>
             
-            <section id=#navegacion-segura>
-                <h2>Navegación Segura y Anónima</h2>
-                <p>La navegación en internet es una de las principales formas en las que se expone la privacidad de los usuarios.
-                     Cada vez que visitas un sitio web, tu dispositivo envía información sobre tu dirección IP, ubicación, sistema operativo, navegador y otros datos que pueden ser utilizados para rastrearte.</p>
             
-                <p>Además, los navegadores más populares, como Google Chrome, Microsoft Edge y Safari, recopilan datos de navegación, hábitos de consumo y preferencias para construir perfiles detallados de cada usuario.</p>
-            
-                <p>En esta sección, aprenderás cómo navegar de forma segura y anónima, evitando rastreadores, protegiendo tu identidad digital y eligiendo herramientas diseñadas para preservar la privacidad.</p>
-            
-                <h3>Los Peligros de la Navegación Convencional</h3>
-                <p>Cuando usas un navegador sin medidas de privacidad, dejas un rastro digital que permite a las empresas y gobiernos recopilar información sobre ti.</p>
-            
-                <h4>Principales riesgos:</h4>
-                <ul>
-                    <li>Rastreo de actividad web → Cookies y scripts pueden seguir tu navegación incluso fuera del sitio.</li>
-                    <li>Huella digital del navegador → Cada navegador tiene configuraciones únicas que pueden identificarte sin cookies.</li>
-                    <li>Dirección IP expuesta → Tu ubicación y proveedor de internet son visibles en cada conexión.</li>
-                    <li>Análisis de comportamiento → Plataformas como Google y Facebook monitorean qué haces en la web.</li>
-                </ul>
-                <p>Las grandes compañías utilizan estos datos para personalizar anuncios, influenciar decisiones y vender información a terceros.</p>
-                <p>Si deseas recuperar el control sobre tu privacidad, necesitas cambiar la forma en la que navegas por internet.</p>
-            
-                <h3>Navegadores Privados: La Primera Capa de Protección</h3>
-                <p>Usar un navegador con configuraciones de privacidad adecuadas es el primer paso para minimizar el rastreo en línea.</p>
-            
-                <h4>Navegadores recomendados:</h4>
-                <ul>
-                    <li>Tor Browser → Diseñado para el anonimato total en la red Tor.</li>
-                    <li>LibreWolf → Versión mejorada de Firefox sin telemetría ni rastreo.</li>
-                    <li>Brave → Bloquea anuncios y rastreadores por defecto, con opción de navegación en Tor.</li>
-                </ul>
-                <p>Estos navegadores eliminan la telemetría, restringen la ejecución de scripts maliciosos y protegen tu identidad de manera más efectiva que opciones como Chrome o Edge.</p>
-                <p><strong>Consejo:</strong> Evita utilizar navegadores con tu cuenta de Google o Microsoft iniciada, ya que esto anula cualquier intento de anonimato.</p>
-            
-                <h3>Cómo Proteger tu Dirección IP y Ubicación</h3>
-                <p>Tu dirección IP es como tu huella digital en internet: revela tu ubicación y el proveedor de servicios que usas. Sin medidas de privacidad, cada sitio que visitas puede identificar desde qué país, ciudad o incluso barrio te estás conectando.</p>
-            
-                <h4>Soluciones para ocultar tu IP:</h4>
-                <ul>
-                    <li>VPN (Red Privada Virtual): Enruta tu tráfico a través de servidores cifrados, ocultando tu IP real.</li>
-                    <li>Tor: Red de anonimato que redirige el tráfico a través de múltiples nodos.</li>
-                    <li>Proxy anónimo: Permite cambiar tu IP sin cifrado total (menos seguro que VPN o Tor).</li>
-                </ul>
-                <p>Si solo buscas privacidad básica, una VPN es suficiente. Pero si necesitas anonimato total, usa Tor.</p>
-                <p><strong>Consejo:</strong> No uses VPNs gratuitas, ya que muchas venden tus datos. Opta por servicios confiables sin registros.</p>
-            
-                <h3>Evitar el Rastreo con Bloqueadores y Configuración Avanzada</h3>
-                <p>Incluso con un navegador privado y una VPN, los sitios web aún pueden rastrearte mediante cookies, scripts de terceros y huellas digitales avanzadas.</p>
-            
-                <h4>Herramientas esenciales para evitar el rastreo:</h4>
-                <ul>
-                    <li>uBlock Origin: Extensión para bloquear anuncios y scripts maliciosos.</li>
-                    <li>Privacy Badger: Detecta rastreadores invisibles y los bloquea automáticamente.</li>
-                    <li>Decentraleyes: Evita que los sitios carguen contenido desde servidores de rastreo.</li>
-                </ul>
-                <p>Estas herramientas garantizan que los sitios web no puedan recopilar información sobre tu comportamiento sin tu permiso.</p>
-                <p><strong>Consejo:</strong> Configura tu navegador para que elimine cookies y datos al cerrar la sesión.</p>
-            
-                <h3>La Importancia del Uso de Alias y Correos Temporales</h3>
-                <p>Muchas plataformas requieren registrarse con un correo electrónico, lo que vincula tu identidad con tus actividades en línea.</p>
-            
-                <h4>Opciones recomendadas:</h4>
-                <ul>
-                    <li>SimpleLogin: Genera alias de correo para proteger tu dirección real.</li>
-                    <li>AnonAddy: Sistema de reenvío de correos con anonimato.</li>
-                    <li>Guerrilla Mail: Correos temporales de un solo uso.</li>
-                </ul>
-                <p><strong>Consejo:</strong> Nunca uses tu correo personal para registrarte en servicios que no necesitas.</p>
-            
-                <h3>Conclusión: Toma el Control de tu Navegación</h3>
-                <p>Cada vez que usas un navegador sin medidas de privacidad, estás regalando datos personales a empresas y gobiernos.</p>
-                <ul>
-                    <li>Usa navegadores privados como Tor, LibreWolf o Brave.</li>
-                    <li>Oculta tu dirección IP con una VPN o Tor.</li>
-                    <li>Bloquea rastreadores y cookies con herramientas como uBlock Origin.</li>
-                    <li>Usa correos temporales y alias para evitar la vinculación de cuentas.</li>
-                </ul>
-                <p>Proteger tu navegación es el primer paso para recuperar tu privacidad digital.</p>
-            
-            </section>
 
             <section id="navegacion-segura">
                 <h2>Navegación Segura y Anónima</h2>
@@ -912,10 +826,6 @@ const id = "privacidad-fisica";
 
 </section>
 
----
-const title = "Eliminación de Datos y Protección Contra Doxing";
-const id = "eliminacion-datos";
----
 
 <section id="eliminacion-datos">
     <h2>Eliminación de Datos y Protección Contra Doxing</h2>
@@ -1035,8 +945,47 @@ aside {
 #contenido {
     background-color: #878787;
     border-radius: 1rem;
-  }
+    padding: 2rem;
+    padding-bottom: 4rem;
 
+  }
+#titulo {
+text-align: center;
+color: #313131;
+font-size: 3.5rem;
+padding: 2rem;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+margin-bottom: 2rem;
+
+}
+
+
+
+section ul li{
+  padding: 0.2rem;
+  font-weight: bold;
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+
+section p, h3, h4 {
+  padding: 0.7rem;
+}
+
+section h3, h4{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+  section h2 {
+ color: #101010;
+ font-weight: bold;
+ padding: 1rem;
+font-size: 2.5rem;
+text-align: center;
+}
 
 
 
