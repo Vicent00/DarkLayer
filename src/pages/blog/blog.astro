@@ -5,13 +5,12 @@ import Footer from '../../components/Altfooter.astro';
 
 const posts = [
   {
-    id: 'new-dashboard-features',
+    id: 'How_choose_operativesystem',
     title: 'New Dashboard Features Released',
     excerpt: "We've added powerful new analytics tools to help you gain deeper insights into your business performance.",
     date: 'May 15, 2025',
     author: 'Sarah Johnson',
     authorRole: 'Product Manager',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/32.jpg',
     category: 'Product Updates',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   },
@@ -22,7 +21,6 @@ const posts = [
     date: 'April 28, 2025',
     author: 'Michael Chen',
     authorRole: 'CTO',
-    authorAvatar: 'https://randomuser.me/api/portraits/men/46.jpg',
     category: 'New Features',
     image: 'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   },
@@ -33,7 +31,6 @@ const posts = [
     date: 'April 10, 2025',
     author: 'Emily Rodriguez',
     authorRole: 'Lead Developer',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/65.jpg',
     category: 'Developer Updates',
     image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   },
@@ -44,7 +41,6 @@ const posts = [
     date: 'March 22, 2025',
     author: 'David Wilson',
     authorRole: 'Product Designer',
-    authorAvatar: 'https://randomuser.me/api/portraits/men/22.jpg',
     category: 'Product Updates',
     image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   },
@@ -55,7 +51,6 @@ const posts = [
     date: 'March 5, 2025',
     author: 'Jessica Lee',
     authorRole: 'Security Officer',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/45.jpg',
     category: 'Security',
     image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   },
@@ -66,7 +61,6 @@ const posts = [
     date: 'February 18, 2025',
     author: 'Robert Kim',
     authorRole: 'Partnership Manager',
-    authorAvatar: 'https://randomuser.me/api/portraits/men/67.jpg',
     category: 'Integrations',
     image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   }
@@ -118,12 +112,6 @@ const categories = [...new Set(posts.map(post => post.category))];
                 </a>
                 <p class="text-gray-600 dark:text-gray-300 mb-6">{post.excerpt}</p>
                 <div class="flex items-center">
-                  <img 
-                    src={post.authorAvatar} 
-                    alt={post.author} 
-                    class="w-10 h-10 rounded-full mr-3 object-cover"
-                    loading="lazy"
-                  />
                   <div>
                     <p class="font-medium text-gray-900 dark:text-white">{post.author}</p>
                     <p class="text-sm text-gray-500 dark:text-gray-400">{post.authorRole}</p>
