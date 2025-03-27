@@ -19,7 +19,7 @@
 4. **Guías educativas** sobre cómo proteger la privacidad.
 5. **Noticias y alertas de seguridad.**
 
-### 📸 Screenshots
+### 📸 DARK LAYER
 
 ![Página Principal](./public/screenshots/inicio.png)
 ![Sección de Herramientas](./public/screenshots/herramientas.png)
@@ -54,7 +54,7 @@
 ```
 5. Acceder al proyecto en el navegador:
 ```
-http://localhost:3000
+http://localhost:4321
 ```
 
 ### 📤 Despliegue en Producción
@@ -78,7 +78,7 @@ dist
 - 📱 Mejorar la experiencia responsiva para móviles.
 - 📂 Añadir un sistema de foros encriptados.
 - 📚 Crear un sistema interactivo de aprendizaje sobre privacidad.
-- 💬 Implementar un chatbot anónimo basado en inteligencia artificial.
+- 💬 Implementar un tecnología blockchain descentralizada.
 
 ---
 
@@ -99,7 +99,7 @@ Solamente necesitas Node.js, npm, y seguir los pasos indicados en la sección de
 ---
 
 ## 📧 Contacto
-¿Tienes alguna pregunta o sugerencia? Contacta al desarrollador en: **tu-email@ejemplo.com**
+¿Tienes alguna pregunta o sugerencia? Contacta al desarrollador en: **info@vicenteaguilar.com**
 
 ---
 
